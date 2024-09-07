@@ -1,0 +1,196 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Login segment */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  filter: blur(2px);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.login-box {
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(230, 221, 221, 0.3);
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  color: #1665c0;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.user-icon {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.user-icon img {
+  width: 100%;
+  height: auto;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+  color: #777777;
+  font-size: 13px;
+  width: 100%;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #eaeaea;
+  font-size: 16px;
+}
+
+.list-password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 3px;
+}
+
+.remember input {
+  width: auto;
+}
+
+.forgot {
+  padding: 3px;
+}
+
+.log {
+  background-color: #0b5bb6;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.log:hover {
+  background-color: #08418a;
+}
+
+.log:active {
+  animation: clickAnimation 0.3s ease;
+}
+
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+    background-color: #08418a;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Error message styles */
+.error {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Media Queries for responsiveness */
+
+/* สำหรับหน้าจอขนาดเล็กมาก (มือถือแนวตั้ง) */
+@media (max-width: 360px) {
+  .login-box {
+    padding: 20px;
+  }
+
+  .user-icon {
+    width: 80px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+  }
+
+  .log {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* สำหรับหน้าจอขนาดเล็ก (มือถือ) */
+@media (max-width: 576px) {
+  .login-box {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .list-password {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .list-password a {
+    margin-top: 10px;
+  }
+}
+
+/* สำหรับหน้าจอขนาดกลาง (แท็บเล็ต) */
+@media (max-width: 768px) {
+  .login-box {
+    width: 80%;
+  }
+}
+
+/* สำหรับหน้าจอขนาดใหญ่ (เดสก์ท็อป) */
+@media (min-width: 992px) {
+  .login-box {
+    width: 400px;
+  }
+}
