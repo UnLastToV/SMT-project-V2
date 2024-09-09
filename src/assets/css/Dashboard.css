@@ -1,0 +1,125 @@
+/* Global Container Styling */
+.container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  /* Light grey background */
+  border-radius: 15px;
+  /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* Light shadow for depth */
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #066fd7;
+  /* Blue Material UI primary color */
+  color: rgb(192, 192, 192);
+  padding: 10px 20px;
+}
+
+.navbar h6 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar .username {
+  margin-right: 20px;
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.navbar button {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.navbar button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+/* Form Filter Styling */
+.form-filters {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-filters input {
+  width: 200px;
+}
+
+/* Add Button Styling */
+.add-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.add-button .MuiIconButton-root {
+  background-color: #1976d2;
+  /* Blue primary color */
+  color: white;
+}
+
+.add-button .MuiIconButton-root:hover {
+  background-color: #1565c0;
+  /* Darker shade on hover */
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  /* Light grey lines */
+}
+
+th {
+  background-color: #f5f5f5;
+  /* Light grey for headers */
+  font-weight: bold;
+}
+
+td {
+  background-color: white;
+}
+
+td button {
+  margin-right: 8px;
+}
+
+td button:last-child {
+  margin-right: 0;
+}
+
+/* Buttons for CRUD Actions */
+.MuiButton-containedPrimary {
+  background-color: #0025f4;
+  /* A different blue for Edit */
+}
+
+.MuiButton-containedSecondary {
+  background-color: #d32f2f;
+  /* Red for Delete */
+}
+
+.MuiButton-containedSecondary:hover {
+  background-color: #b71c1c;
+  /* Darker red for Delete hover */
+}
